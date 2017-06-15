@@ -1,6 +1,6 @@
 'use strict';
 
-export default class AdminController {
+export default class sponsorsController {
   /*@ngInject*/
   constructor(User) {
     // Use the User $resource to fetch all users

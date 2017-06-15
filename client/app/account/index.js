@@ -7,9 +7,8 @@ import uiRouter from 'angular-ui-router';
 import routing from './account.routes';
 import login from './login';
 import settings from './settings';
-import signup from './signup';
 
-export default angular.module('envisageApp.account', [uiRouter, login, settings, signup])
+export default angular.module('envisageApp.account', [uiRouter, login, settings])
   .config(routing)
   .run(function($rootScope) {
     'ngInject';

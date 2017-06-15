@@ -1,8 +1,6 @@
 'use strict';
 
 import User from './user.model';
-import config from '../../config/environment';
-import jwt from 'jsonwebtoken';
 
 function validationError(res, statusCode) {
   statusCode = statusCode || 422;
@@ -33,19 +31,6 @@ export function index(req, res) {
 /**
  * Creates a new user
  */
-export function create(req, res) {
-  var newUser = new User(req.body);
-  newUser.provider = 'local';
-  newUser.role = 'user';
-  newUser.save()
-    .then(function(user) {
-      var token = jwt.sign({ _id: user._id }, config.secrets.session, {
-        expiresIn: 60 * 60 * 5
-      });
-      res.json({ token });
-    })
-    .catch(validationError(res));
-}
 
 /**
  * Get a single user
@@ -67,14 +52,6 @@ export function show(req, res, next) {
  * Deletes a user
  * restriction: 'admin'
  */
-export function destroy(req, res) {
-  return User.findByIdAndRemove(req.params.id).exec()
-    .then(function() {
-      res.status(204).end();
-    })
-    .catch(handleError(res));
-}
-
 /**
  * Change a users password
  */

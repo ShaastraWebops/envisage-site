@@ -16,7 +16,10 @@ import {
 
 import _Auth from '../components/auth/auth.module';
 import account from './account';
-import admin from './admin';
+import projects from './projects';
+import news from './news';
+import prevprojects from './prevprojects';
+import sponsors from './sponsors';
 import navbar from '../components/navbar/navbar.component';
 import footer from '../components/footer/footer.component';
 import main from './main/main.component';
@@ -26,7 +29,7 @@ import util from '../components/util/util.module';
 import './app.css';
 
 angular.module('envisageApp', [ngCookies, ngResource, ngSanitize, uiRouter, uiBootstrap, _Auth,
-  account, admin, 'validation.match', navbar, footer, main, constants, util
+  account, projects, prevprojects, news, sponsors, 'validation.match', navbar, footer, main, constants, util
 ])
   .config(routeConfig)
   .run(function($rootScope, $location, Auth) {
