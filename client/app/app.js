@@ -15,14 +15,14 @@ import {
 } from './app.config';
 
 import _Auth from '../components/auth/auth.module';
+import main from './main/main.component';
 import account from './account';
-import projects from './projects';
-import news from './news';
-import prevprojects from './prevprojects';
-import sponsors from './sponsors';
 import navbar from '../components/navbar/navbar.component';
 import footer from '../components/footer/footer.component';
-import main from './main/main.component';
+import projects from './projects/projects.component';
+import news from './news/news.component';
+import prevprojects from './prevprojects/prevprojects.component';
+import sponsors from './sponsors/sponsors.component';
 import constants from './app.constants';
 import util from '../components/util/util.module';
 

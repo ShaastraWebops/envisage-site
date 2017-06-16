@@ -5,9 +5,7 @@ export default function routes($stateProvider) {
 
   $stateProvider.state('sponsors', {
     url: '/sponsors',
-    template: require('./sponsors.html'),
-    controller: 'sponsorsController',
-    controllerAs: 'sponsors',
+    template: '<sponsors></sponsors>',
     authenticate: 'admin'
   });
 }
