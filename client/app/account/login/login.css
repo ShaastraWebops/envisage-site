@@ -1,0 +1,15 @@
+#form-contain
+{	
+    transform: scale(0.4) translateX(365%) translateY(-105%);
+    border: 3px solid black;
+    width: 30%;
+    display: none;
+    padding-right: 5%;
+    padding-top: 3%;
+}
+
+@keyframes expand
+{
+	100%  {transform: scale(1) translateX(0px) translateY(10px);}
+
+}

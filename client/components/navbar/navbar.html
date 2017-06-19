@@ -21,7 +21,7 @@
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
-        <li ng-hide="$ctrl.isLoggedIn()" ui-sref-active="actived"><a class = "navbar-item" ui-sref="login">Login</a></li>
+        <li ng-hide="$ctrl.isLoggedIn()" ui-sref-active="actived" id="login-button" ><a class = "navbar-item" ui-sref="login">Login</a></li>
         <li ng-show="$ctrl.isLoggedIn()" class = "navbar-item"><p class="navbar-text">Hello {{ $ctrl.getCurrentUser().name }}</p> </li>
         <li ng-show="$ctrl.isLoggedIn()" ui-sref-active="actived" class = "navbar-item"><a ui-sref="settings"><span class="glyphicon glyphicon-cog"></span></a></li>
         <li ng-show="$ctrl.isLoggedIn()"><a class = "navbar-item" ui-sref="logout">Logout</a></li>

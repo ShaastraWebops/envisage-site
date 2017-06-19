@@ -51,4 +51,5 @@
 @import '../components/footer/footer.css';
 @import '../components/modal/modal.css';
 @import '../components/navbar/navbar.css';
+@import 'account/login/login.css';
 /* endinject */

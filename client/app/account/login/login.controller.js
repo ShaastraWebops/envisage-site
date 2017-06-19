@@ -1,4 +1,5 @@
 'use strict';
+import $ from 'jquery';
 
 export default class LoginController {
   user = {
@@ -16,6 +17,10 @@ export default class LoginController {
   constructor(Auth, $state) {
     this.Auth = Auth;
     this.$state = $state;
+
+    $("#login-button").css("display","none");
+    $("#form-contain").css("display","block");
+    $("#form-contain").css("animation","expand 1s linear forwards");
   }
 
   login(form) {
