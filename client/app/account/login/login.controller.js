@@ -20,7 +20,39 @@ export default class LoginController {
 
     $("#login-button").css("display","none");
     $("#form-contain").css("display","block");
-    $("#form-contain").css("animation","expand 1s linear forwards");
+    $("#form-contain").css("animation","expand 0.7s linear forwards");    
+  
+    $("#email").focus(function(){
+      if( $("#email").val() == "")
+        $("#email-label").removeClass("float-label");
+      
+    });
+
+    $("#password").focus(function(){
+      if( $("#password").val() == "")
+        $("#password-label").removeClass("float-label");
+      
+    });
+
+    $("#email").focusout(function(){
+      if( $("#email").val() == "")
+       $("#email-label").addClass("float-label");
+      
+    });
+
+    $("#password").focusout(function(){
+      if( $("#password").val() == "")
+        $("#password-label").addClass("float-label");
+      
+    });
+
+    $("#email-label").click(function(){
+      $("#email").focus();
+    });
+
+    $("#password-label").click(function(){
+      $("#password").focus();
+    });
   }
 
   login(form) {
