@@ -19,7 +19,7 @@ export class NavbarComponent {
     this.isAdmin = Auth.isAdminSync;
     this.getCurrentUser = Auth.getCurrentUserSync;
 
-    $("#containers").hover( function(){
+    $("#navbar-contain").hover( function(){
         $("#containers").css("width","100%");
       setTimeout(function(){ 
         $('.navbar-item').css("display","block");
@@ -31,10 +31,13 @@ export class NavbarComponent {
     },
     function(){
 
+     setTimeout(function(){  
       $('.navbar-default .navbar-nav > li > a').css("display","none");
       $('.navbar-nav > li ').css("display","none");
       $('.navbar-item').css("display","none");
       $("#containers").css("width","12%");
+    },500);
+
     })
   }
 
