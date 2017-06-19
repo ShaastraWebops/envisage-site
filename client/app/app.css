@@ -50,4 +50,5 @@
 @import 'sponsors/sponsors.css';
 @import '../components/footer/footer.css';
 @import '../components/modal/modal.css';
+@import '../components/navbar/navbar.css';
 /* endinject */
