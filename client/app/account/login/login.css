@@ -1,14 +1,24 @@
 #form-contain
 {	
-    transform: scale(0.4) translateX(365%) translateY(-105%);
+    transform: scale(0.4) translateX(365%) translateY(-135%);
     background-color: white;
     width: 30%;
     display: none;
-    padding-right: 5%;
+   /* padding-right: 5%;
     padding-top: 3%;
-    -webkit-box-shadow: 5px 5px 10px 3px rgba(0,0,0,0.6);
-	-moz-box-shadow: 5px 5px 10px 3px rgba(0,0,0,0.6);
-	box-shadow: 5px 5px 10px 3px rgba(0,0,0,0.6);
+    */
+    background: rgba(19, 35, 47, 0.9);
+    padding: 40px;
+    max-width: 600px;
+    margin: 40px auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+    color: white;
+}
+
+#heading
+{
+	transition: all 1s linear forwards;
 }
 
 @keyframes expand
@@ -19,84 +29,65 @@
 
 .float-label
 {
-	transform: translateY(32px) translateX(11px);
-    text-rendering: optimizeLegibility;
+	transform: translateY(38px) translateX(11px);
     letter-spacing: normal;
-	color: #555555;
-	font-weight: 100;
+	font-size: 22px;
+	color: #ffffff;
+	font-family: 'Titillium Web', sans-serif;
 	cursor: text;
+	font-weight: 200;
 }
 
 label
 {
 	transition: all 0.2s linear;
+	font-family: 'Titillium Web', sans-serif;
 }
 
+input:focus, textarea:focus {
+    outline: 0;
+    border-color: #1ab188;
+}
+
+input, textarea {
+    font-size: 22px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 5px 10px;
+    background: none;
+    background-image: none;
+    border: 1px solid #a0b3b0;
+    color: #ffffff;
+    border-radius: 0;
+    font-family: 'Titillium Web', sans-serif;
+ }
+
+#login-but:hover, #login-but:focus {
+    background: #179b77;
+}
+
+#login-but {
+    display: block;
+    width: 50%;
+}
+
+#login-but {
+    border: 0;
+    outline: none;
+    border-radius: 0;
+    padding: 15px 0;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    background: #1ab188;
+    color: #ffffff;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -webkit-appearance: none;
+    position: relative;
+    left: 25%;
+}
 /*//////////////////////////////////////*/
 
-/*fieldset {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-input {
-  display: block;
-  width: 100%;
-  height: 3em;
-  padding: 16px 8px;
-  border: 0;
-  border-radius: 0;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1;
-  background: rgba(255,255,255,0.97);
-  color: #212121;
-  outline: 0;
-  appearance: none;
-  transition: all 0.2s ease-in-out;
-}
-.form-label {
-  fieldset {
-    position: relative;
-    &:first-child input {
-      border-radius: 4px 4px 0 0;
-    }
-    &:last-child input {
-      border-radius: 0 0 4px 4px;
-      box-shadow: 0 2px 0 rgba(0,0,0,0.15);
-    }
-    & + fieldset { border-top: 1px solid #ddd; }
-  }
-  label {
-    position: absolute;
-    top: 15px;
-    left: 8px;
-    color: #909090;
-    transform: translate3d(0, 0, 0);
-    transition: all 0.2s ease-in-out;
-  }
-}
-
-// Animation on <label>
-.form-css-label {
-  input {
-    &[data-empty="false"],
-    &:valid,
-    &:focus {
-      padding: 22px 8px 10px;
-    }
-    &:focus {
-      outline: 0;
-      background: rgba(255,255,255,1);
-    }
-    &[data-empty="false"] + label,
-    &:valid + label,
-    &:focus + label {
-      color: #5856D6;
-      font-weight: 700;
-      font-size: 12px;
-      transform: translate3d(0, -10px, 0);
-    }
-  }
-}
-*/

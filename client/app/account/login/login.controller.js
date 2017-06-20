@@ -18,10 +18,15 @@ export default class LoginController {
     this.Auth = Auth;
     this.$state = $state;
 
-    $("#login-button").css("display","none");
-    $("#form-contain").css("display","block");
-    $("#form-contain").css("animation","expand 0.7s linear forwards");    
-  
+      $('.navbar-nav > li ').css("display","none");
+      $('.navbar-item').css("display","none");
+      $('.navbar-default .navbar-nav > li > a').css("display","none");
+      $("#containers").css("width","25%");
+      $("#login-button").css("display","none");
+      $("#form-contain").css("display","block");
+      $("#heading").css("text-align","center");
+      $("#form-contain").css("animation","expand 0.7s linear forwards"); 
+    
     $("#email").focus(function(){
       if( $("#email").val() == "")
         $("#email-label").removeClass("float-label");

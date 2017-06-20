@@ -10,7 +10,7 @@ export class MainController {
 
 		var old_deg=0, deg=0;
 		
-		$("#container").on('mousewheel  DOMMouseScroll',function(e){
+		$("#back").on('mousewheel  DOMMouseScroll',function(e){
 
 		    e.stopPropagation();
 		    e.preventDefault();

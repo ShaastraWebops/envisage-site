@@ -1,10 +1,7 @@
 <div class="container" id="form-contain">
   <div class="row">
     <div class="col-sm-12">
-      <h1 style="text-align: right;">Login</h1>
-      <hr style="height:2px;border:none; background-color: black">
-      <p>Accounts are reset on server restart from <code>server/config/seed.js</code></p>
-      <p>Admin account is <code>admin@example.com</code> / <code>admin</code></p>
+      <h1 id="heading" style="text-align: right; background: #179b77; padding: 10px;">Login</h1>
     </div>
     <div class="col-sm-12">
       <form class="form" name="form" ng-submit="vm.login(form)" novalidate>
@@ -12,13 +9,13 @@
         <div class="form-group">
           <label class="float-label" id="email-label">Email</label>
 
-          <input type="email" name="email" id="email" class="form-control" ng-model="vm.user.email" required autocomplete="off">
+          <input type="email" name="email" id="email" ng-model="vm.user.email" required autocomplete="off">
         </div>
 
         <div class="form-group">
           <label class="float-label" id="password-label">Password</label>
 
-          <input type="password" id="password" name="password" class="form-control" ng-model="vm.user.password" required autocomplete="off">
+          <input type="password" id="password" name="password" ng-model="vm.user.password" required autocomplete="off">
         </div>
 
         <div class="form-group has-error">
@@ -33,7 +30,7 @@
         </div>
 
         <div>
-          <button class="btn btn-inverse btn-lg btn-login" type="submit">
+          <button class="btn btn-inverse btn-lg btn-login" id="login-but" type="submit">
             Login
           </button>
         </div>
