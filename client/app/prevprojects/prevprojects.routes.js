@@ -5,7 +5,6 @@ export default function routes($stateProvider) {
 
   $stateProvider.state('prevprojects', {
     url: '/prevprojects',
-    template: '<prevprojects></prevprojects>',
-    authenticate: 'admin'
+    template: '<prevprojects></prevprojects>'
   });
 }

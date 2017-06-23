@@ -10,6 +10,7 @@ export class NewsController {
   /*@ngInject*/
   constructor($http) {
     this.$http = $http;
+    this.isAdmin = Auth.isAdminSync;
   }
 
   $onInit() {
@@ -28,8 +29,9 @@ export class NewsController {
     }
   }
 
-  deleteNews() {
-    this.$http.delete(`/api/news/${news._id}`);
+  deleteNews(index) {
+    this.news = this.news[index];
+    this.$http.delete(`/api/posts/${this.news._id}`);
   }
 }
 

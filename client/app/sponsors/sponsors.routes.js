@@ -5,7 +5,6 @@ export default function routes($stateProvider) {
 
   $stateProvider.state('sponsors', {
     url: '/sponsors',
-    template: '<sponsors></sponsors>',
-    authenticate: 'admin'
+    template: '<sponsors></sponsors>'
   });
 }

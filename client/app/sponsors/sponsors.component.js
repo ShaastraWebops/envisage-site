@@ -10,6 +10,7 @@ export class SponsorsController {
   /*@ngInject*/
   constructor($http) {
     this.$http = $http;
+    this.isAdmin = Auth.isAdminSync;
   }
 
   $onInit() {
@@ -28,8 +29,9 @@ export class SponsorsController {
     }
   }
 
-  deleteSponsor() {
-    this.$http.delete(`/api/sponsors/${sponsor._id}`);
+  deleteSponsor(index) {
+    this.sponsor = this.sponsors[index];
+    this.$http.delete(`/api/posts/${this.sponsor._id}`);
   }
 }
 

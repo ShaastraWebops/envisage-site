@@ -5,31 +5,36 @@ import routing from './projects.routes';
 export class ProjectsController {
 
   projects = [];
-  newProject = '';
+  newProject = [];
 
   /*@ngInject*/
   constructor($http) {
     this.$http = $http;
+    this.isAdmin = Auth.isAdminSync;
   }
 
   $onInit() {
     this.$http.get('/api/projects')
       .then(response => {
         this.projects = response.data;
+        this.isAdmin = Auth.isAdminSync;
       });
   }
 
   addProject() {
     if(this.newProject) {
       this.$http.post('/api/projects', {
-        name: this.newProject
+        name: this.newProject.name,
+        info: this.newProject.info
       });
       this.newProject = '';
+      window.location.reload();
     }
   }
 
-  deleteProject() {
-    this.$http.delete(`/api/projects/${project._id}`);
+  deleteProject(index) {
+    this.project = this.projects[index];
+    this.$http.delete(`/api/posts/${this.project._id}`);
   }
 }
 

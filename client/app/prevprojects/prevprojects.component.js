@@ -10,6 +10,7 @@ export class PrevprojectsController {
   /*@ngInject*/
   constructor($http) {
     this.$http = $http;
+    this.isAdmin = Auth.isAdminSync;
   }
 
   $onInit() {
@@ -28,8 +29,9 @@ export class PrevprojectsController {
     }
   }
 
-  deletePrevproject() {
-    this.$http.delete(`/api/prevprojects/${prevproject._id}`);
+  deletePrevproject(index) {
+    this.prevproject = this.prevprojects[index];
+    this.$http.delete(`/api/posts/${this.prevproject._id}`);
   }
 }
 
