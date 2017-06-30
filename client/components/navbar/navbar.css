@@ -9,7 +9,7 @@
 #containers
 {
 	background-color: rgba(19, 35, 47, 0.9);
-    width: 25%;
+    width: 100%;
     float: left;
     transition: width 0.5s linear;
     box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
@@ -24,12 +24,10 @@
 
 {
     color: white;
-    display: none;
 }
 
 .navbar-nav > li {
     color: white;
-    display: none;
 }
 
 .navbar-title

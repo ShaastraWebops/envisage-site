@@ -1,6 +1,6 @@
 <div id="back">
 
-  <img src="../assets/images/007.jpg" id="_007">
+  <!-- <img src="../assets/images/007.jpg" id="_007">
   <img src="../assets/images/man.png" id="man">
   <img src="../assets/images/ironman.png" id="ironman">
   <img src="../assets/images/dance.JPG" id="dance">
@@ -50,5 +50,73 @@
       </a>
     </div>
 
+  </div> -->
+
+
+  <div id = "heads">
+    <div id = "logo-holder">
+      <svg height="250" width="250" class="logo-border border-1">
+        <circle cx="122" cy="125" r="105" stroke="#1ab188" stroke-width="4" fill="transparent"/>
+      </svg>
+      <svg height="250" width="250" class="logo-border border-2">
+        <circle cx="122" cy="125" r="122" stroke="#1ab188" stroke-width="4" fill="transparent"/>
+      </svg>
+      <img src="../assets/images/logo.gif" id="logo">
+    </div>
+    <div class="cube-container">
+        <div class="photo-cube">
+          <img src="../assets/images/cube1.JPG" class = "front image">
+          <img src="../assets/images/cube2.jpg" class = "back image">  
+          <img src="../assets/images/cube3.JPG" class = "left image">
+          <img src="../assets/images/cube4.jpg" class = "right image">
+        </div>
+    </div>
+    <div id="heading">
+      <svg width = 400 height = 80 class = "svg">
+        <line class = "top line" x1="0" y1="0" x2="400" y2="0" />
+        <line class="line" x1="400" y1="0" x2="400" y2="80" />
+        <line class="bottom line" x1="400" y1="80" x2="0" y2="80" />
+        <line class="line" x1="0" y1="80" x2="0" y2="0" />
+      </svg>
+      <div id="heading-content">
+        ENVISAGE
+      </div>
+    </div>
+    <div id="tagline">
+      Where technology meets Entertainment
+    </div>
+    <div id="info">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus hendrerit gravida urna, vel molestie ex ultricies at. Nunc vehicula nisi varius lectus gravida pretium.
+    </div>
+    <div id="click-me">
+        Click Me
+    </div>
+  </div>
+  <div id="portals" class="container-fluid">
+    <div class = "portal portal1 col-md-1 col-md-offset-2 col-lg-1 col-lg-offset-2 col-sm-1 col-sm-offset-2 col-xs-2 col-xs-offset-1">
+      <a ui-sref="projects">
+        Projects
+      </a>
+    </div>
+    <div class = "portal portal2 col-md-1 col-md-offset-1 col-lg-1 col-lg-offset-1 col-sm-1 col-sm-offset-1 col-xs-2 col-xs-offset-2">
+      <a ui-sref="spons">
+        Sponsors
+      </a>
+    </div>
+    <div class = "portal portal3 col-md-1 col-md-offset-1 col-lg-1 col-lg-offset-1 col-sm-1 col-sm-offset-1 col-xs-2 col-xs-offset-2">
+      <a ui-sref="prev_projects">
+        Previous Projects
+      </a>
+    </div>
+    <div class = "portal portal4 col-md-1 col-md-offset-1 col-lg-1 col-lg-offset-1 col-sm-1 col-sm-offset-1 col-xs-2 col-xs-offset-3">
+      <a ui-sref="news">
+        Envisage in news
+      </a>
+    </div>
+    <div class = "portal portal5 col-md-1 col-md-offset-1 col-lg-1 col-lg-offset-1 col-sm-1 col-sm-offset-1 col-xs-2 col-xs-offset-2">
+      <a ui-sref="members">
+        Members
+      </a>
+    </div>
   </div>
 </div>
