@@ -13,6 +13,34 @@
   animation: vibrate 2s linear infinite;
 }
 
+#logo
+{
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  z-index: 0;
+  position: relative;
+  top: 25px;
+  left: -2px;
+  transition: all 1s linear;
+  transform-style: preserve-3d;
+}
+
+#shaastra
+{
+  height: 100%;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;  
+}
+
+#envi
+{
+  height: 100%;
+  position: relative;
+  top: -200px;
+  backface-visibility: hidden;
+}
+
 @keyframes vibrate {
 
   from { transform: translate3d(-2px, 0, 0); }
@@ -52,6 +80,7 @@ a, a:hover
   position: relative;
   top: 20%;
   text-align: center;
+  perspective: 1000px;
 }
 
 .svg
@@ -62,15 +91,6 @@ a, a:hover
 
 @keyframes dash {
   100% { stroke-dashoffset: 0; }
-}
-
-#logo
-{
-  height: 75%;
-  top: 31.25px;
-  left: 31.25px;
-  position: relative;
-  transition: all 1s linear;
 }
 
 #heading
@@ -152,10 +172,12 @@ a, a:hover
 {
   stroke-dasharray: 700;
   stroke-dashoffset: 700;
+  margin: 0 -125px;
 }
 
 .border-2
 {
+  margin: 0 -125px;
   stroke-dasharray: 800;
   stroke-dashoffset: -800;
 }
@@ -168,9 +190,8 @@ a, a:hover
 
 #logo-holder:hover #logo
 {
-  transform: rotateZ(360deg);
+  transform: rotateY(180deg);
 }
-
 #logo-holder:hover .border-2
 {
   animation: draw 1s linear forwards;
