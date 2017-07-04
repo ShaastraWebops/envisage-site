@@ -8,7 +8,7 @@ export class NewsController {
   newNews = '';
 
   /*@ngInject*/
-  constructor($http) {
+  constructor($http, Auth) {
     this.$http = $http;
     this.isAdmin = Auth.isAdminSync;
   }
