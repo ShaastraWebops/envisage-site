@@ -5,7 +5,8 @@ import {registerEvents} from './prevprojects.events';
 
 var PrevprojectSchema = new mongoose.Schema({
   name: String,
-  info: String
+  info: String,
+  pictures: [{type: String}]
 });
 
 registerEvents(PrevprojectSchema);
