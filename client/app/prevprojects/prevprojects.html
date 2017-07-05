@@ -1,9 +1,56 @@
-<header class="hero-unit" id="banner">
-  <div class="container">  
-    <p class="lead">Previous projects will be displayed here</p>
-  </div>
-</header>
-
-<div class="container">
- 
+<div id="prev-contain">
+   <br>
+   <button class="btn add-prev" ng-click="ppCtrl.bringAdd()">Add Project</button>
+   <br>
+   <br>
+   <div id="project-holder" ng-repeat="project in ppCtrl.prevprojects">
+      <div class="bottom-tile tile">
+         <div class="bottom-content">
+            <button class="btn prev-proj-buttons delete" ng-click="ppCtrl.deletePrevproject($index)">
+               <span class="glyphicon glyphicon-trash" id="delete-icon"></span>
+               <span class="icon-content" id="delete-icon-content">DELETE</span> 
+            </button>
+            <button class="btn prev-proj-buttons edit" ng-click="ppCtrl.editPrevproject($index)">
+               <span class="glyphicon glyphicon-edit" id="edit-icon"></span>
+               <span class="icon-content" id="edit-icon-content">EDIT</span>
+            </button>
+         </div>
+      </div>
+      <div class="right-tile tile">
+         <div id="gallery-bring" ng-click="ppCtrl.bringGallery()">
+            Gallery
+         </div>
+      </div>
+      <div class="left-tile tile">
+         <div class="left-content">
+            <span style="font-size: 1.4vw; font-weight: 600 !important;">{{project.name}}</span><br><br>
+            {{project.info}} 
+         </div>
+      </div>
+      <div class="center-tile tile">
+         <img src="{{project.pictures[0]}}" class="prev-image">
+      </div>
+      <div id="gallery">
+         <div ng-repeat="picture in project.pictures">
+            <div class="col-sm-3 col-sm-offset-1 col-lg-3 col-lg-offset-1 col-md-3 col-md-offset-1 col-xs-10 col-xs-offset-1">
+               <img src= "{{picture}}" class="prev-image-gall">
+            </div>
+         </div>
+         <div id="close-gallery" ng-click="ppCtrl.closeGallery()">X</div>
+      </div>
+   </div>
+   <div id="edit-window">
+      <input type="text" id="pre-name" class="form-control" ng-model="ppCtrl.editproject.name">
+      <textarea ng-model = "ppCtrl.editproject.info" class="form-control" id="pre-info"></textarea>
+      <label for="add-image" id="add-image-label" class="btn">Add Project Picture</label>
+      <input type="file" id="add-image" style="display: none;">
+      <button id="edit-submit" class="btn" ng-click="ppCtrl.hideEdit()">SUBMIT</button>
+   </div>
+   <div id="add-window">
+      <input type="text" id="pre-name" class="form-control" placeholder="Project Name" ng-model="ppCtrl.newPrevproject.name">
+      <textarea ng-model = "ppCtrl.newPrevproject.info" placeholder="Project Info" class="form-control" id="pre-info"></textarea>
+      <label for="add-image" id="add-image-label" class="btn">Add Project Picture</label>
+      <input type="file" id="add-image" style="display: none;">
+      <button id="edit-submit" class="btn" ng-click="ppCtrl.addPrevproject()">SUBMIT</button>
+   </div>
 </div>
