@@ -163,6 +163,7 @@
     background-color: rgba(19, 35, 47, 1);
     font-weight: 600;
     height: 7vh;
+    font-size: 1.5vw;
 }
 
 .add-prev:hover
