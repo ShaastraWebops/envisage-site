@@ -28,8 +28,40 @@ export default function seedDatabaseIfNeeded() {
     Project.find({}).remove()
       .then(() => {
         Project.create({
-          name: 'something',
-          info: 'something more'
+          name: 'Multi-Colored Persistence of Vision',
+          info: 'Description 1'
+        },
+        {
+          name: '3D Waterfall',
+          info: 'Description 2'
+        },
+        {
+          name: 'Speed Painting Bots',
+          info: 'Description 3'
+        },
+        {
+          name: 'Virtual Instruments',
+          info: 'Description 4'
+        },
+        {
+          name: 'Laser Show',
+          info: 'Description 5'
+        },
+        {
+          name: 'Projection Mapping',
+          info: 'Description 6'
+        },
+        {
+          name: 'Dance Dance Revoultion',
+          info: 'Description 7'
+        },
+        {
+          name: 'Interactive LED Table',
+          info: 'Description 8'
+        },
+        {
+          name: 'Face Sketching Bot',
+          info: 'Description 9'
         })
         .then(() => console.log('finished populating projects'))
         .catch(err => console.log('error populating projects', err));

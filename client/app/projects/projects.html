@@ -1,9 +1,6 @@
-<header class="hero-unit" id="banner">
-  <div class="container">  
-    <p class="lead">Projects will be displayed here</p>
-  </div>
-</header>
-
 <div class="container">
-  
+  <div ng-repeat="project in pCtrl.projects">
+  	<h2>{{project.name}}</h2>
+  	<p>{{project.info}}</p>
+  </div>
 </div>

@@ -17,7 +17,6 @@ export class ProjectsController {
     this.$http.get('/api/projects')
       .then(response => {
         this.projects = response.data;
-        this.isAdmin = Auth.isAdminSync;
       });
   }
 
@@ -42,6 +41,7 @@ export default angular.module('envisageApp.projects', [uiRouter])
   .config(routing)
   .component('projects', {
     template: require('./projects.html'),
-    controller: ProjectsController
+    controller: ProjectsController,
+    controllerAs: "pCtrl"
   })
   .name;
