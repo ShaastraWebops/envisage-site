@@ -17,6 +17,7 @@ export class PrevprojectsController {
   constructor($http, Auth) {
     this.$http = $http;
     this.isAdmin = Auth.isAdminSync;
+    console.log(this.isAdmin());
   }
 
   $onInit() {

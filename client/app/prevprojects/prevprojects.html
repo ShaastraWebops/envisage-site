@@ -1,16 +1,16 @@
 <div id="prev-contain">
    <br>
-   <button class="btn add-prev" ng-click="ppCtrl.bringAdd()">Add Project</button>
+   <button class="btn add-prev" ng-click="ppCtrl.bringAdd()" ng-disabled="!ppCtrl.isAdmin()">Add Project</button>
    <br>
    <br>
    <div id="project-holder" ng-repeat="project in ppCtrl.prevprojects">
       <div class="bottom-tile tile">
          <div class="bottom-content">
-            <button class="btn prev-proj-buttons delete" ng-click="ppCtrl.deletePrevproject($index)">
+            <button class="btn prev-proj-buttons delete" ng-click="ppCtrl.deletePrevproject($index)" ng-disabled="!ppCtrl.isAdmin()">
                <span class="glyphicon glyphicon-trash" id="delete-icon"></span>
                <span class="icon-content" id="delete-icon-content">DELETE</span> 
             </button>
-            <button class="btn prev-proj-buttons edit" ng-click="ppCtrl.editPrevproject($index)">
+            <button class="btn prev-proj-buttons edit" ng-click="ppCtrl.editPrevproject($index)" ng-disabled="!ppCtrl.isAdmin()">
                <span class="glyphicon glyphicon-edit" id="edit-icon"></span>
                <span class="icon-content" id="edit-icon-content">EDIT</span>
             </button>
@@ -23,7 +23,7 @@
       </div>
       <div class="left-tile tile">
          <div class="left-content">
-            <span style="font-size: 1.4vw; font-weight: 600 !important;">{{project.name}}</span><br><br>
+            <h3>{{project.name}}</h3><br>
             {{project.info}} 
          </div>
       </div>
