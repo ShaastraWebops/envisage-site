@@ -80,6 +80,7 @@
   transform: rotateY(90deg);
   width: 37vw;
   background: rgba(19, 35, 47, 0.9);
+  overflow-y: auto;
 }
 
 .right-tile
@@ -87,7 +88,6 @@
   transform-origin: 100%;
   transform: rotateY(-90deg);
   background-color: rgba(19, 35, 47, 0.9);
-  overflow-y: auto;
 }
 
 .bottom-tile
