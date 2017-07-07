@@ -1,4 +1,4 @@
-.prev-image-gall
+/*.prev-image-gall
 {
   height: 100%;
   width: 100%;
@@ -40,7 +40,7 @@
 #gallery
 {
   width: 100vw;
-  /*height: 92vh;*/
+  height: 92vh;
   position: absolute;
   top: 0vh;
   left: 0vw;
@@ -314,4 +314,4 @@
 #delete-icon-content, #edit-icon-content
 {
   transition: transform 0.5s linear;
-}
+}*/

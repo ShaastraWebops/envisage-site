@@ -12,11 +12,13 @@ export class PrevprojectsController {
   };
   editproject = {};
   
+  
 
   /*@ngInject*/
   constructor($http, Auth) {
     this.$http = $http;
     this.isAdmin = Auth.isAdminSync;
+    this.prevpath = '../assets/images/prev/';
   }
 
   $onInit() {
@@ -26,28 +28,12 @@ export class PrevprojectsController {
     //   });
 
     // console.log(this.prevprojects);
-
-    this.prevprojects = [
-      { 
-        "name" : "Project 1",
-        "info" : " Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
-        "pictures" : ["../assets/images/cube1.JPG", "../assets/images/cube2.jpg", "../assets/images/cube3.JPG", "../assets/images/cube4.jpg",],
-      },
-
-      { 
-        "name" : "Project 2",
-        "info" : " Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
-        "pictures" : ["../assets/images/cube2.jpg", "../assets/images/cube1.JPG", "../assets/images/cube3.JPG", "../assets/images/cube4.jpg",],
-      },
-
-      { 
-        "name" : "Project 3",
-        "info" : " Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
-        "pictures" : ["../assets/images/cube3.JPG", "../assets/images/cube1.JPG", "../assets/images/cube2.jpg", "../assets/images/cube4.jpg",],
-      }
-
-    ];
-    console.log(this.prevprojects);
+    
+    this.$http.get('/api/prevprojects').then(res => {
+      this.prevprojects = res.data;
+      console.log(this.prevprojects);
+    })
+    
 
   }
 
