@@ -29,8 +29,8 @@ export class PrevprojectsController {
 
     // console.log(this.prevprojects);
     
-    this.$http.get('/api/prevprojects').then(res => {
-      this.prevprojects = res.data;
+    this.$http.get('/api/projects').then(res => {
+      this.projects = res.data;
       console.log(this.prevprojects);
     })
     

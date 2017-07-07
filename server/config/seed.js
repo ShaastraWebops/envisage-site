@@ -30,39 +30,48 @@ export default function seedDatabaseIfNeeded() {
       .then(() => {
         Project.create({
           name: 'Multi-Colored Persistence of Vision',
-          info: 'Description 1'
+          info: 'Description 1',
+          image: 'pov.jpg'
         },
         {
           name: '3D Waterfall',
-          info: 'Description 2'
+          info: 'Description 2',
+          image: 'waterfall.png'
         },
         {
           name: 'Speed Painting Bots',
-          info: 'Description 3'
+          info: 'Description 3',
+          image: 'painting.jpg'
         },
         {
           name: 'Virtual Instruments',
-          info: 'Description 4'
+          info: 'Description 4',
+          image: 'virtual.jpg'
         },
         {
           name: 'Laser Show',
-          info: 'Description 5'
+          info: 'Description 5',
+          image: 'laser.jpg'
         },
         {
           name: 'Projection Mapping',
-          info: 'Description 6'
+          info: 'Description 6',
+          image: 'mapping.jpg'
         },
         {
           name: 'Dance Dance Revoultion',
-          info: 'Description 7'
+          info: 'Description 7',
+          image: 'ddr.png'
         },
         {
           name: 'Interactive LED Table',
-          info: 'Description 8'
+          info: 'Description 8',
+          image: 'table.png'
         },
         {
           name: 'Face Sketching Bot',
-          info: 'Description 9'
+          info: 'Description 9',
+          image: 'sketch.jpg'
         })
         .then(() => console.log('finished populating projects'))
         .catch(err => console.log('error populating projects', err));
