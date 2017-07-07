@@ -127,7 +127,7 @@ export default function seedDatabaseIfNeeded() {
         {
           name: 'Light and sound',
           info: 'some info',
-          image: 'light.jpg'
+          image: 'light.png'
         },
         {
           name: 'Minion Dance',

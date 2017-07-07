@@ -1,6 +1,5 @@
 <div class="container" style="margin: auto;">
-   <div class="col-sm-12 col-md-4 project" ng-repeat="p in pCtrl.projects" style="padding: 1px 1px 1px 0px; height: 200px;">
-      <img src="{{pCtrl.path}}{{p.image}}" style="width: 100%; height: 100%;">
+   <div class="col-sm-12 col-md-4 project" ng-repeat="p in pCtrl.projects" style="padding: 1px 1px 1px 0px; height: 200px;" ng-style="{'background-image': url('{{pCtrl.path}}{{p.image}}')}">
       <h3 style="position: absolute; bottom: 0px; color: white;">{{p.name}}</h3>
    </div>
 </div>
