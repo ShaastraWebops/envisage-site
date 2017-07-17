@@ -6,7 +6,8 @@ import {registerEvents} from './projects.events';
 var ProjectSchema = new mongoose.Schema({
   name: String,
   info: String,
-  pictures: [{type: String}]
+  image: String,
+  picture: String
 });
 
 registerEvents(ProjectSchema);
