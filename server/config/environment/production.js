@@ -19,7 +19,7 @@ module.exports = {
     uri: process.env.MONGODB_URI
       || process.env.MONGOHQ_URL
       || process.env.OPENSHIFT_MONGODB_DB_URL + process.env.OPENSHIFT_APP_NAME
-      || 'mongodb://' + process.env.PROD_USER + ':' + process.env.PROD_PASSWORD + '@localhost/envisage';
+      || 'mongodb://' + process.env.ENVIPROD_USER + ':' + process.env.ENVIPROD_PASSWORD + '@localhost/envisage';
   }
 
   seedDB : true;
