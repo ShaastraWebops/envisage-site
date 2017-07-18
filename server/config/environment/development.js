@@ -7,7 +7,7 @@ module.exports = {
 
   // MongoDB connection options
   mongo: {
-    uri: 'mongodb://' + process.env.ENVIDEV_USER + ':' + process.env.ENVIDEV_PASSWORD + '@localhost/envisage';
+    uri: 'mongodb://' + process.env.ENVIDEV_USER + ':' + process.env.ENVIDEV_PASSWORD + '@localhost/envisage'
   },
 
   // Seed database on startup
