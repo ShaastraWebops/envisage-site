@@ -11,8 +11,8 @@ export class PrevprojectsController {
     "info" : ""
   };
   editproject = {};
-  
-  
+
+
 
   /*@ngInject*/
   constructor($http, Auth) {
@@ -28,12 +28,12 @@ export class PrevprojectsController {
     //   });
 
     // console.log(this.prevprojects);
-    
-    this.$http.get('/api/projects').then(res => {
-      this.projects = res.data;
+
+    this.$http.get('/api/prevprojects').then(res => {
+      this.prevprojects = res.data;
       console.log(this.prevprojects);
     })
-    
+
 
   }
 
@@ -71,7 +71,7 @@ export class PrevprojectsController {
       }
 
     $(".tile").css("display","block");
-    $(".add-prev").css("display","block");   
+    $(".add-prev").css("display","block");
     $("#add-window").css("transform","translateX(-150vw)");
   }
 
@@ -93,7 +93,7 @@ export class PrevprojectsController {
     this.prevprojects[this.editindex].name = this.editproject.name;
     this.prevprojects[this.editindex].info = this.editproject.info;
     $(".tile").css("display","block");
-     $(".add-prev").css("display","block"); 
+     $(".add-prev").css("display","block");
     $("#edit-window").css("transform","translateX(-150vw)");
   }
 
