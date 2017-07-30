@@ -61,8 +61,16 @@
           </p>
         </div>
 
+        <div class="form-group" ng-class="{ 'has-success': form.confirmPassword.$valid && vm.submitted,
+                                            'has-error': form.confirmPassword.$invalid && vm.submitted }">
+          <label class="question">LinkedIn Profile URL </label>
+          <input type="text" name="linkedin" class="form-control" ng-model="vm.user.linkedin"
+                 match="vm.user.password"
+                 ng-minlength="3" required/>
+        </div>
+
         <div>
-          <button class="btn btn-default btn-lg btn-register" type="submit">
+          <button class="btn btn-default btn-lg btn-register" type="submit" ng-click="vm.register(form)">
             Sign up
           </button>
           <a class="btn btn-default btn-lg btn-login" ui-sref="login">

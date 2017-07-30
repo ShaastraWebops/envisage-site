@@ -2,6 +2,15 @@
 
 import User from './user.model';
 
+export function create(req, res) {
+  var newUser = new User(req.body);
+  newUser.provider = 'local';
+  newUser.role = 'user';
+  return newUser.save()
+    .then()
+    .catch(validationError(res));
+}
+
 function validationError(res, statusCode) {
   statusCode = statusCode || 422;
   return function(err) {

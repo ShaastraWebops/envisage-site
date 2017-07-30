@@ -12,7 +12,8 @@ export default class SignupController {
     this.user = {
       name: '',
       email: '',
-      password: ''
+      password: '',
+      linkedin: this.linkedin
     };
     this.errors = {};
     this.submitted = false;
@@ -26,7 +27,8 @@ export default class SignupController {
       return this.Auth.createUser({
         name: this.user.name,
         email: this.user.email,
-        password: this.user.password
+        password: this.user.password,
+        linkedin: this.user.linkedin
       })
         .then(() => {
           // Account created, redirect to home
