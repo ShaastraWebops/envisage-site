@@ -12,6 +12,7 @@ var UserSchema = new Schema({
     lowercase: true,
     required: true
   },
+  linkedin: String,
   role: {
     type: String,
     default: 'user'
