@@ -5,7 +5,7 @@
     <input type="text" ng-model="project.name"/>
   </div>
   <div style="padding-left: 80%;">
-    <button ng-hide="info.edit" class="btn btn-primary" ng-click="info.edit=true"  > Edit Project </button>
+    <button ng-show="!info.edit&&isAdmin" class="btn btn-primary" ng-click="info.edit=true"> Edit Project </button>
   </div>
   <img src="{{info.prevpath}}{{project.image}}" style="width: 30%; height: 50%;">
   <br>

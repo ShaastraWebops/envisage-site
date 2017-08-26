@@ -22,7 +22,6 @@ export default class SignupController {
 
   register(form) {
     this.submitted = true;
-    console.log('comes here');
     if(form.$valid) {
       return this.Auth.createUser({
         name: this.user.name,
@@ -31,7 +30,6 @@ export default class SignupController {
         linkedin: this.user.linkedin
       })
         .then(() => {
-          // Account created, redirect to home
           this.$state.go('main');
         })
         .catch(err => {

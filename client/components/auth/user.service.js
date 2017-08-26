@@ -17,6 +17,9 @@ export function UserResource($resource) {
       params: {
         id: 'me'
       }
+    },
+    save: {
+      method: 'POST'
     }
   });
 }

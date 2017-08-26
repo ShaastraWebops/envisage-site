@@ -9,14 +9,19 @@ export class infoController {
   edit = false;
   id = null;
   /*@ngInject*/
-  constructor($stateParams,$http,$scope,$state) {
+  constructor($stateParams,$http,$scope,$state,Auth) {
     this.id = $stateParams.id;
     this.$http = $http;
     this.$state = $state;
     this.$scope = $scope;
     $http.get('/api/prevprojects/'+this.id).then(res => {
       $scope.project = res.data;
-      console.log(res.data);
+    });
+    Auth.getCurrentUser().then(user => {
+      if(user.role === 'admin')
+      {
+        $scope.isAdmin = true;
+      }
     });
     this.prevpath = '../assets/images/prev/';
   }

@@ -7,7 +7,9 @@ export function create(req, res) {
   newUser.provider = 'local';
   newUser.role = 'user';
   return newUser.save()
-    .then()
+    .then(user => {
+      res.status(200).json(user);
+    })
     .catch(validationError(res));
 }
 

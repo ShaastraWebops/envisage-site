@@ -30,7 +30,7 @@ import util from '../components/util/util.module';
 import './app.css';
 
 angular.module('envisageApp', [ngCookies, ngResource, ngSanitize, uiRouter, uiBootstrap, _Auth,
-  account, projects, prevprojects, news, info, sponsors, 'validation.match', navbar, footer, main, constants, util
+  account, projects, prevprojects, news,  info, sponsors, 'validation.match', navbar, footer, main, constants, util
 ])
   .config(routeConfig)
   .run(function($rootScope, $location, Auth) {

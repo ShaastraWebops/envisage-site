@@ -8,7 +8,6 @@ export default function routes($stateProvider) {
     params: {
       id: null
     },
-    template: '<info></info>',
-    authenticate: true
+    template: '<info></info>'
   });
 }
