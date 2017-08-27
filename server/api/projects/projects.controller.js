@@ -120,7 +120,7 @@ export function destroy(req, res) {
 
 export function serve(req,res) {
   if(process.env.IMAGEPATH){
-  res.sendFile(path.resolve(process.env.IMAGEPATH + '/projects/' + req.params.name));
+  res.sendFile(path.resolve(process.env.IMAGEPATH + '/images/Envisage/images/projects/' + req.params.name));
 }
 else {
   res.sendFile(path.resolve('client/assets/images/projects/' + req.params.name));

@@ -112,7 +112,7 @@ export function patch(req, res) {
 
 export function serve(req,res) {
   if(process.env.IMAGEPATH){
-  res.sendFile(path.resolve(process.env.IMAGEPATH + '/prev/' + req.params.name));
+  res.sendFile(path.resolve(process.env.IMAGEPATH + '/images/Envisage/images/prev/' + req.params.name));
 }
 else {
   res.sendFile(path.resolve('client/assets/images/prev/' + req.params.name));
