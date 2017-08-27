@@ -22,5 +22,5 @@ module.exports = {
       || 'mongodb://' + process.env.ENVIPROD_USER + ':' + process.env.ENVIPROD_PASSWORD + '@localhost/envisage'
   },
 
-  seedDB : true
+  seedDB : false
 };
