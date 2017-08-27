@@ -11,14 +11,16 @@ export class ProjectsController {
   constructor($http, Auth) {
     this.$http = $http;
     this.isAdmin = Auth.isAdminSync;
-    this.path = '../assets/images/projects/';
   }
 
   $onInit() {
     this.$http.get('/api/projects')
       .then(response => {
         this.projects = response.data;
-        console.log(this.projects);
+        for(var i=0;i<this.projects.length;i++)
+            {
+                this.projects[i].image = '/api/projects/view/'+this.projects[i].image;
+            }
       });
   }
 
