@@ -18,7 +18,6 @@ export class PrevprojectsController {
   constructor($http, Auth) {
     this.$http = $http;
     this.isAdmin = Auth.isAdminSync;
-    this.prevpath = '../assets/images/prev/';
   }
 
   $onInit() {
@@ -31,6 +30,10 @@ export class PrevprojectsController {
 
     this.$http.get('/api/prevprojects').then(res => {
       this.prevprojects = res.data;
+      for(var i=0;i<this.prevprojects.length;i++)
+          {
+              this.prevprojects[i].image = '/api/prevprojects/view/'+this.prevprojects[i].image;
+          }
     })
 
 

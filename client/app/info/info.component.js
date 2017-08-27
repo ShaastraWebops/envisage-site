@@ -16,6 +16,7 @@ export class infoController {
     this.$scope = $scope;
     $http.get('/api/prevprojects/'+this.id).then(res => {
       $scope.project = res.data;
+      $scope.project.image = '/api/prevprojects/view/'+ res.data.image;
     });
     Auth.getCurrentUser().then(user => {
       if(user.role === 'admin')
@@ -23,7 +24,6 @@ export class infoController {
         $scope.isAdmin = true;
       }
     });
-    this.prevpath = '../assets/images/prev/';
   }
 
   $onInit() {

@@ -57,7 +57,7 @@
 
 <div class="container" style="margin: auto;">
    <div class="col-sm-12 col-md-3 project" ng-repeat="p in ppCtrl.prevprojects" style="padding: 1px 1px 1px 0px; height: 200px;">
-      <a ui-sref="info({id: p._id})"><img src="{{ppCtrl.prevpath}}{{p.image}}" style="width: 100%; height: 100%;"></a>
+      <a ui-sref="info({id: p._id})"><img ng-src="{{p.image}}" style="width: 100%; height: 100%;"></a>
       <h3 style="position: absolute; bottom: 0px; color: white;">{{p.name}}</h3>
    </div>
 </div>
