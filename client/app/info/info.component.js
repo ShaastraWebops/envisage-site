@@ -11,19 +11,23 @@ export class infoController {
   /*@ngInject*/
   constructor($stateParams,$http,$scope,$state,Auth) {
     this.id = $stateParams.id;
+    if(this.id === null)
+    {
+      $state.go('prevprojects');
+    }
     this.$http = $http;
     this.$state = $state;
     this.$scope = $scope;
     $http.get('/api/prevprojects/'+this.id).then(res => {
       $scope.project = res.data;
+      $scope.project.image = '/api/prevprojects/view/'+ res.data.image;
     });
     Auth.getCurrentUser().then(user => {
-      if(user.role === 'admin')
+      if(user.role === 'admin'||user.role === 'heads')
       {
         $scope.isAdmin = true;
       }
     });
-    this.prevpath = '../assets/images/prev/';
   }
 
   $onInit() {

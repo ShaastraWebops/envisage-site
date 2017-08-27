@@ -212,6 +212,11 @@ export function AuthService($location, $http, $cookies, $q, appConfig, Util, Use
       return Auth.hasRoleSync('admin');
     },
 
+    isHeadsSync() {
+      // eslint-disable-next-line no-sync
+      return Auth.hasRoleSync('heads');
+    },
+
     /**
      * Get auth token
      *

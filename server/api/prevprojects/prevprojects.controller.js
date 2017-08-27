@@ -12,6 +12,7 @@
 
 import jsonpatch from 'fast-json-patch';
 import Prevproject from './prevprojects.model';
+import path from 'path';
 
 function respondWithResult(res, statusCode) {
   statusCode = statusCode || 200;
@@ -108,6 +109,16 @@ export function patch(req, res) {
     .then(respondWithResult(res))
     .catch(handleError(res));
 }
+
+export function serve(req,res) {
+  if(process.env.IMAGEPATH){
+  res.sendFile(path.resolve(process.env.IMAGEPATH + '/images/Envisage/images/prev/' + req.params.name));
+}
+else {
+  res.sendFile(path.resolve('client/assets/images/prev/' + req.params.name));
+}
+}
+
 
 // Deletes a Prevproject from the DB
 export function destroy(req, res) {

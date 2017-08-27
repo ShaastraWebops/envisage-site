@@ -16,9 +16,9 @@ export class NavbarComponent {
     'ngInject';
 
     this.isLoggedIn = Auth.isLoggedInSync;
-    this.isAdmin = Auth.isAdminSync;
+    this.isAdmin = Auth.isAdminSync||Auth.isHeadsSync;
     this.getCurrentUser = Auth.getCurrentUserSync;
-    
+
     }
 
 }
