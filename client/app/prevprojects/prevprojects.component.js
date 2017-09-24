@@ -29,6 +29,8 @@ export class PrevprojectsController {
     // console.log(this.prevprojects);
 
     this.$http.get('/api/prevprojects').then(res => {
+
+      console.log(res.data, ' isthe res.data from prevprojects component');
       this.prevprojects = res.data;
       for(var i=0;i<this.prevprojects.length;i++)
           {
