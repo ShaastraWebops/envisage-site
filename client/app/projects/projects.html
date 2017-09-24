@@ -1,6 +1,9 @@
 <div class="container" style="margin: auto;">
-   <div class="col-sm-12 col-md-4 project" ng-repeat="p in pCtrl.projects" style="padding: 1px 1px 1px 0px; height: 200px;" ui-sref="projectview({id : p.info})">
-     <img ng-src="{{p.image}}" style="width: 100%; height: 100%;">
-      <h3 style="position: absolute; bottom: 0px; color: white;">{{p.name}}</h3>
+   <div class="col-sm-12 col-md-4 project" ng-repeat="p in pCtrl.projects" style="padding: 1px 1px 1px 0px; height: 200px;">
+	   	<a ng-href="/projects/{{p._id}}">
+	    	<img ng-src="{{p.image}}" style="width: 100%; height: 100%;">
+	      	<h3 style="position: absolute; bottom: 0px; color: white;">{{p.name}}</h3>
+	   	</a>
    </div>
+
 </div>

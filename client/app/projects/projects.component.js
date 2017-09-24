@@ -42,11 +42,27 @@ export class ProjectsController {
   }
 }
 
+export class ProjectController{
+  constructor($http, $stateParams)
+  {
+    this.$http = $http;
+    this.$stateParams = $stateParams;
+
+    this.id = $stateParams.id;
+    console.log(this.id);
+  }
+}
+
 export default angular.module('envisageApp.projects', [uiRouter])
   .config(routing)
   .component('projects', {
     template: require('./projects.html'),
     controller: ProjectsController,
     controllerAs: "pCtrl"
+  })
+  .component('project', {
+    template: require('./project.html'),
+    controller: ProjectController,
+    controllerAs: "prCtrl"
   })
   .name;
