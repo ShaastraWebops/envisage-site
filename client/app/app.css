@@ -56,8 +56,8 @@ body
 @import 'news/news.css';
 @import 'prevprojects/prevprojects.css';
 @import 'projects/projects.css';
-@import 'sponsors/sponsors.css';
 @import 'projectview/projectview.css';
+@import 'sponsors/sponsors.css';
 @import '../components/footer/footer.css';
 @import '../components/modal/modal.css';
 @import '../components/navbar/navbar.css';

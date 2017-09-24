@@ -20,9 +20,9 @@ import account from './account';
 import navbar from '../components/navbar/navbar.component';
 import info from './info/info.component';
 import contact from './contact/contact.component';
-import projectview from './projectview/projectview.component';
 import footer from '../components/footer/footer.component';
 import projects from './projects/projects.component';
+import projectview from './projectview/projectview.component';
 import news from './news/news.component';
 import prevprojects from './prevprojects/prevprojects.component';
 import sponsors from './sponsors/sponsors.component';
@@ -32,7 +32,7 @@ import util from '../components/util/util.module';
 import './app.css';
 
 angular.module('envisageApp', [ngCookies, ngResource, ngSanitize, uiRouter, uiBootstrap, _Auth,
-  account, projects, prevprojects, news,  projectview, contact, info, sponsors, 'validation.match', navbar, footer, main, constants, util
+  account, projects,projectview, prevprojects, news,  projectview, contact, info, sponsors, 'validation.match', navbar, footer, main, constants, util
 ])
   .config(routeConfig)
   .run(function($rootScope, $location, Auth) {

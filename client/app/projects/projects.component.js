@@ -17,6 +17,7 @@ export class ProjectsController {
     this.$http.get('/api/projects')
       .then(response => {
         this.projects = response.data;
+        console.log(response.data);
         for(var i=0;i<this.projects.length;i++)
             {
                 this.projects[i].image = '/api/projects/view/'+this.projects[i].image;

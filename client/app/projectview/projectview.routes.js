@@ -5,6 +5,9 @@ export default function($stateProvider) {
   $stateProvider
     .state('projectview', {
       url: '/projectview',
-      template: '<projectview></projectview>'
+      template: '<projectview></projectview>',
+       params: {
+      id: null
+    }
     });
 }

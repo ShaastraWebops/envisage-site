@@ -15,7 +15,7 @@
 }
 
 .aboutus h3{
-  font-size: 3vw;
+  font-size: 4vw;
 }
 
 .aboutus p{
@@ -23,15 +23,29 @@
   color: gainsboro;
   line-height: 1.7;
   letter-spacing: 1px;
-  margin-bottom: 50px;
+  margin-bottom: 135px;
 }
 
 .aboutus h4{
   color: white;
-  font-size: 2vw;
+  font-size: 3vw;
   margin: 20px 0;
+  text-align: center;
+  display: inline-block;
 }
 
 .aboutus .more p{
   
+}
+
+.aboutus h4:after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: transparent;
+  transition: all .3s ease;
+  background: #FF512F;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(135deg, #DD2476, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(135deg, #DD2476, #FF512F);
 }

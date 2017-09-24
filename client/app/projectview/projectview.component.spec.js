@@ -1,4 +1,4 @@
-'use strict';
+  
 
 describe('Component: ProjectviewComponent', function() {
   // load the controller's module
