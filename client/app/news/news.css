@@ -1,27 +1,37 @@
-.thing-form {
+.aboutus  h2{
+  padding: 10px 0 50px 0;
+  font-size: 10vw;
+  background: #FF512F;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(135deg, #DD2476, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(135deg, #DD2476, #FF512F);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
+
+.aboutus{
+  padding: 50px;
+}
+
+.aboutus h3{
+  font-size: 3vw;
+}
+
+.aboutus p{
+  font-weight: 100;
+  color: gainsboro;
+  line-height: 1.7;
+  letter-spacing: 1px;
+  margin-bottom: 50px;
+}
+
+.aboutus h4{
+  color: white;
+  font-size: 2vw;
   margin: 20px 0;
 }
 
-#banner {
-  border-bottom: none;
-  margin-top: -20px;
-}
-
-#banner h1 {
-  font-size: 60px;
-  line-height: 1;
-  letter-spacing: -1px;
-}
-
-.hero-unit {
-  position: relative;
-  padding: 30px 15px;
-  color: #F5F5F5;
-  text-align: center;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-  background: #4393B9;
-}
-
-.navbar-text {
-  margin-left: 15px;
+.aboutus .more p{
+  
 }
