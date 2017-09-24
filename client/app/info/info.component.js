@@ -21,7 +21,7 @@ export class infoController {
     $http.get('/api/prevprojects/'+this.id).then(res => {
       console.log(res.data, ' isthe res.data from info component');
       $scope.project = res.data;
-      $scope.project.image = '/api/prevprojects/view/'+ res.data.image;
+      $scope.image = '/api/prevprojects/view/'+ res.data.image;
     });
     Auth.getCurrentUser().then(user => {
       if(user.role === 'admin'||user.role === 'heads')
