@@ -5,7 +5,6 @@ body{
   flex-direction: column;
   background: black;
   max-height: 100vh;
-  overflow-y: hidden;
 }
 
 /*.box{
@@ -47,11 +46,13 @@ body{
   min-width: 250px;
   max-width: 500px;
   max-height: 250px;
+  transition: all 0.2s ease-out;
 }
 
 
 
 .m:hover{
+  transform: translate(-2px,2px);
   background: #FF512F;  /* fallback for old browsers */
 background: -webkit-linear-gradient(150deg, #DD2476, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(150deg, #DD2476, #FF512F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -70,12 +71,12 @@ background: linear-gradient(150deg, #DD2476, #FF512F); /* W3C, IE 10+/ Edge, Fir
 .left h2{
   margin: 2vh 3vw;
   color: white;
-  letter-spacing: 3px;
-  font-family: 'Oswald', serif;
+  letter-spacing: 1px;
+  font-family: 'Montserrat', serif;
 }
 
 h3{
-  font-family: 'Oswald', serif;
+  font-family: 'Montserrat', serif;
   font-size: 18px;
   color: whitesmoke;
   margin-left: 10px;

@@ -1,27 +1,35 @@
-.thing-form {
-  margin: 20px 0;
+.sponsors img{
+  width: 25vw;
 }
 
-#banner {
-  border-bottom: none;
-  margin-top: -20px;
+.sponsors p{
+  color: whitesmoke;
 }
 
-#banner h1 {
-  font-size: 60px;
-  line-height: 1;
-  letter-spacing: -1px;
+.sponsors  h2{
+  padding: 10px 50px 50px;
+  font-size: 10vw;
+  background: #FF512F;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(150deg, #DD2476, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(150deg, #DD2476, #FF512F);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
 }
 
-.hero-unit {
-  position: relative;
-  padding: 30px 15px;
-  color: #F5F5F5;
-  text-align: center;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-  background: #4393B9;
+.sponsors .logo{
+  flex: 1;
+  padding: 20px 50px;
 }
 
-.navbar-text {
-  margin-left: 15px;
+.sponsors .fbox{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 767px){
+  .sponsors img{
+    width: 70vw;
+  }
 }

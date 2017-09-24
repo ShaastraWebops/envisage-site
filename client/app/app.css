@@ -40,10 +40,17 @@
   padding: 0.2em 0;
 }
 
+body
+{
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
 
 /* Component styles are injected through gulp */
 /* inject:css */
 @import 'account/login/login.css';
+@import 'contact/contact.css';
 @import 'info/info.css';
 @import 'main/main.css';
 @import 'news/news.css';
