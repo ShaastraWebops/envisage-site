@@ -7,11 +7,10 @@ module.exports = {
 
   // MongoDB connection options
   mongo: {
-    //uri: 'mongodb://localhost/envisage-dev'
-    uri: 'mongodb://localhost/envisage'
+    uri: 'mongodb://localhost/envisage-dev'
   },
 
   // Seed database on startup
-  seedDB: true
+  seedDB: false
 
 };

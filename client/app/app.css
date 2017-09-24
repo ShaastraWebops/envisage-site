@@ -40,6 +40,12 @@
   padding: 0.2em 0;
 }
 
+body
+{
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
 
 /* Component styles are injected through gulp */
 /* inject:css */
@@ -49,6 +55,7 @@
 @import 'news/news.css';
 @import 'prevprojects/prevprojects.css';
 @import 'projects/projects.css';
+@import 'contact/contact.css';
 @import 'sponsors/sponsors.css';
 @import '../components/footer/footer.css';
 @import '../components/modal/modal.css';
