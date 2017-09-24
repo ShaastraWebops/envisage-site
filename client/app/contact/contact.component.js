@@ -34,7 +34,7 @@ export class contactController {
 }
 
 
-  export default angular.module('envisageApp.info', [uiRouter])
+  export default angular.module('envisageApp.contact', [uiRouter])
     .config(routing)
     .component('contact', {
       template: require('./contact.html'),

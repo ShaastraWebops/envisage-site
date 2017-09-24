@@ -1,32 +1,32 @@
 <div class="container">
-  <h1 align="center"> Cores </h1>
+  <h1 align="center" class="contacth1"> Cores </h1>
 <br>
 <div align="center">
 <ul style="list-style: none;">
   <li ng-repeat="user in contact.cores" ng-show="user.linkedin != null">
-      <a href="{{user.linkedin}}" target="_blank">{{ user.name }}</a>
+      <a href="{{user.linkedin}}" class="contactlink" target="_blank">{{ user.name }}</a>
   </li>
 </ul>
 
 </div>
 <br>
-<h1 align="center"> Super Coordinators </h1>
+<h1 align="center" class="contacth1"> Super Coordinators </h1>
 <br>
 <div align="center">
 <ul style="list-style: none;">
 <li ng-repeat="user in contact.supercoords" ng-show="user.linkedin != null">
-   <a href="{{user.linkedin}}" target="_blank">{{ user.name }}</a>
+   <a href="{{user.linkedin}}" class="contactlink" target="_blank">{{ user.name }}</a>
 </li>
 </ul>
 
 </div>
 <br>
-<h1 align="center"> Coordinators </h1>
+<h1 align="center" class="contacth1"> Coordinators </h1>
 <br>
 <div align="center">
 <ul style="list-style: none;">
 <li ng-repeat="user in contact.coords" ng-show="user.linkedin != null">
-   <a href="{{user.linkedin}}" target="_blank">{{ user.name }}</a>
+   <a href="{{user.linkedin}}" class="contactlink" target="_blank">{{ user.name }}</a>
 </li>
 </ul>
 
