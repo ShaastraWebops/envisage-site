@@ -128,5 +128,5 @@ else {
 }
 
 export function serveinside(req,res) {
-  res.sendFile(path.resolve('../images/Envisage/images/images_proj/' + req.params.name));
+  res.sendFile(path.resolve('../../images/Envisage/images/images_proj/' + req.params.name));
 }
