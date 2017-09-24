@@ -12,5 +12,6 @@ router.put('/:id', controller.upsert);
 router.patch('/:id', controller.patch);
 router.delete('/:id', controller.destroy);
 router.get('/view/:name', controller.serve);
+router.get('/inside/view/:name', controller.serveinside);
 
 module.exports = router;
