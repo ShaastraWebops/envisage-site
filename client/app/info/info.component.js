@@ -24,7 +24,7 @@ export class infoController {
       $scope.image = '/api/prevprojects/view/'+ res.data.image;
     });
     Auth.getCurrentUser().then(user => {
-      if(user.role === 'admin'||user.role === 'heads')
+      if(user.role === 'admin'||user.role === 'heads'||user.role === 'core')
       {
         $scope.isAdmin = true;
       }
