@@ -21,7 +21,10 @@ export class ProjectviewComponent {
 
      if($stateParams.id == null)
      {
+
+      console.log('entered in the null stateParams');
       $state.go("projects");
+
      }
 
      else if($stateParams.id == "Description 1")
