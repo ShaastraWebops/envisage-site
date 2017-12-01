@@ -70,7 +70,7 @@ export class ProjectviewComponent {
           lead: ["Deepanath C" , "Abhishek Kelkar"],
           mentors:["Karteek Dhara", "Jyotesh Chowdary"],
           members: [],
-          desc_xtra: ["1) Precise motor and actuator control (Painting the picture)" , "2) Power distribution and management (Controlling and powering many actuators at once" , "3) Mechanical design (Designing and building the platform on which all these can be placed)"],
+          /*desc_xtra: ["1) Precise motor and actuator control (Painting the picture)" , "2) Power distribution and management (Controlling and powering many actuators at once" , "3) Mechanical design (Designing and building the platform on which all these can be placed)"],*/
           desc:"A completely new concept for Shaastra in its entirety (we hope :P). As the name suggests this project will involve coordinators building a bot which can paint a large picture in a very short time in front of a live audience. The coordinators working on this project will be working on",
           img:"./../assets/images/images_proj/painting.jpg"
           };
@@ -88,7 +88,7 @@ export class ProjectviewComponent {
           lead: ["Deepanath C" , "Abhishek Kelkar"],
           mentors:["Karteek Dhara", "Jyotesh Chowdary"],
           members: [],
-          desc_xtra: ["1) We did not do our best the last time and we know what went wrong. Not the tech but our showmanship for this particularly project lacked significantly." , "2) We did not do our best the last time and we know what went wrong. Not the tech but our showmanship for this particularly project lacked significantly. " ],
+          /*desc_xtra: ["1) We did not do our best the last time and we know what went wrong. Not the tech but our showmanship for this particularly project lacked significantly." , "2) We did not do our best the last time and we know what went wrong. Not the tech but our showmanship for this particularly project lacked significantly. " ],*/
           desc:"Virtual instruments, as the name suggest, are musical instruments without any physical structure (kind of virtual), but resemble the actual instrument in the way we play them. We present it as a band with around 5 or 6 instruments. This was a very successful project in the previous edition of Envisage. We are adding new instruments this year along with drums (with little tweaks). There is a limit to the sort of instruments that can be made but we have a few ideas we are juggling with. Hope to have a solid idea soon. Why again? Two reasons",
           img:"./../assets/images/images_proj/virtual.jpg"
           };
@@ -106,7 +106,7 @@ export class ProjectviewComponent {
           lead: ["Deepanath C" , "Abhishek Kelkar"],
           mentors:["Aswath", "Chaitanya"],
           members: [],
-          desc_xtra: ["1) Image processing" , "2) Arduino programming", "3) Stepper motor control" ],
+          /*desc_xtra: ["1) Image processing" , "2) Arduino programming", "3) Stepper motor control" ],*/
           desc:"This project mainly involves rotating mirrors for diverting a laser beam to project images on fog. These mirrors are rotated using stepper motors where we will be using arduinos to control them for projecting images.The image sketching is done very fast and repeatedly. Depending on the progress of the idea over the summer we might want to integrate it with the TCS concept. (Dancing suits) . Main funda revolves around :",
           img:"./../assets/images/images_proj/lasershow2.png"
           };
@@ -124,7 +124,7 @@ export class ProjectviewComponent {
           lead: ["Deepanath C" , "Abhishek Kelkar"],
           mentors:["Pravallika Kollipara", "Chaitanya"],
           members: [],
-          desc:"Ever wondered much about them high-funda holograms you see in cartoons and sci-fi movies? Well, this project is all about it. Projection mapping is an enchanting visual display that mesmerises the audience by a combination of artistic choreography and holographic projections interacting on stage to create a memorable multimedia performance. A similar project in two dimensions has been attempted in an earlier version of Envisage (link) and received a great response from the audience. Projection mapping, also known as spatial augmented reality, is a technology which is used to turn irregularly shaped objects into surfaces for projection.By using softwares (Audacity, After Effects to name a few), a two- or three-dimensional object is spatially mapped on the virtual program which mimics the real environment it is to be projected on. The software can interact with a projector to fit any desired image onto the surface of that object.",
+          /*desc:"Ever wondered much about them high-funda holograms you see in cartoons and sci-fi movies? Well, this project is all about it. Projection mapping is an enchanting visual display that mesmerises the audience by a combination of artistic choreography and holographic projections interacting on stage to create a memorable multimedia performance. A similar project in two dimensions has been attempted in an earlier version of Envisage (link) and received a great response from the audience. Projection mapping, also known as spatial augmented reality, is a technology which is used to turn irregularly shaped objects into surfaces for projection.By using softwares (Audacity, After Effects to name a few), a two- or three-dimensional object is spatially mapped on the virtual program which mimics the real environment it is to be projected on. The software can interact with a projector to fit any desired image onto the surface of that object.",*/
           img:"./../assets/images/images_proj/mapping.jpg"
           };
           if(process.env.NODE_ENV === "production")
@@ -141,7 +141,7 @@ export class ProjectviewComponent {
           lead: ["Deepanath C" , "Abhishek Kelkar"],
           mentors:["Adhitya"],
           members: [],
-          desc_xtra: ["1) Unity" , "2) Product design", "3) Arduinos, pcb design and sensors, the coordinators in this project will get fair experience with microcontrollers, how they can be used and designing printed circuit boards in Eagle software." ],
+          /*desc_xtra: ["1) Unity" , "2) Product design", "3) Arduinos, pcb design and sensors, the coordinators in this project will get fair experience with microcontrollers, how they can be used and designing printed circuit boards in Eagle software." ],*/
           desc:"As wikipedia would put it, “Dance Dance Revolution is the pioneering series of the rhythm and dance genre in video games. Players stand on a ‘dance platform’ or stage and hit colored arrows laid out in a cross with their feet to musical and visual cues. Players are judged by how well they time their dance to the patterns presented to them and are allowed to choose more music to play to if they receive a passing score. DDR is a very popular game developed for many consoles. The coordinators who take up this project will build this game using a unity+arduino approach. We will develop a game on unity which will be the user interface of the game. Further, we will build a robust mat with sensors which shall interface with the game.The game is interactive in nature and has prospects of including in malls or any place where we expect Shaastra publicity to work in huge numbers. This project will involve the following skills:",
           img:"./../assets/images/images_proj/DDR.jpg"
           };
@@ -177,7 +177,7 @@ export class ProjectviewComponent {
           lead: ["Deepanath C" , "Abhishek Kelkar"],
           mentors:["Adhitya"],
           members: [],
-          desc_xtra: ["1) Arduino stepper controlling" , "2) Basic mech funda", "3) Basic image processing" , "4) Gen elec funda" ],
+          /*desc_xtra: ["1) Arduino stepper controlling" , "2) Basic mech funda", "3) Basic image processing" , "4) Gen elec funda" ],*/
           desc:"The basic idea for this project is to make a pencil sketcher using two stepper motors which control the two degrees of freedom (X,Y positions). The feed to sketch is to be given from the processed images from the camera. The skills :",
           img:"./../assets/images/images_proj/facesketching1.png"
           };
