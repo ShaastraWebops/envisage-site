@@ -1,16 +1,34 @@
-<div>
-	<h1 class="contacth1"> Cores </h1>
-	<div ng-repeat="user in contact.cores">
-		<script type="IN/MemberProfile" data-id="{{user.linkedin}}" data-format="inline" data-related="false"></script>
-	</div>
+<div class="container">
+  <h1 align="center" class="contacth1"> Cores </h1>
+<br>
+<div align="center">
+<ul style="list-style: none;">
+  <li ng-repeat="user in contact.cores" ng-show="user.linkedin != null">
+      <a href="{{user.linkedin}}" class="contactlink" target="_blank">{{ user.name }}</a>
+  </li>
+</ul>
 
-	<h1 class="contacth1"> Super Coordinators </h1>
-	<div ng-repeat="user in contact.supercoords">
-		<script type="IN/MemberProfile" data-id="{{user.linkedin}}" data-format="inline" data-related="false"></script>
-	</div>
+</div>
+<br>
+<h1 align="center" class="contacth1"> Super Coordinators </h1>
+<br>
+<div align="center">
+<ul style="list-style: none;">
+<li ng-repeat="user in contact.supercoords" ng-show="user.linkedin != null">
+   <a href="{{user.linkedin}}" class="contactlink" target="_blank">{{ user.name }}</a>
+</li>
+</ul>
 
-	<h1 class="contacth1"> Coordinators </h1>
-	<div ng-repeat="user in contact.coords">
-		<script type="IN/MemberProfile" data-id="{{user.linkedin}}" data-format="inline" data-related="false"></script>
-	</div>
+</div>
+<br>
+<h1 align="center" class="contacth1"> Coordinators </h1>
+<br>
+<div align="center">
+<ul style="list-style: none;">
+<li ng-repeat="user in contact.coords" ng-show="user.linkedin != null">
+   <a href="{{user.linkedin}}" class="contactlink" target="_blank">{{ user.name }}</a>
+</li>
+</ul>
+
+</div>
 </div>

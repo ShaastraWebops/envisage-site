@@ -9,7 +9,6 @@ export class contactController {
     this.coords = [];
     this.supercoords = [];
     var app = this;
-    this.x = 'https://www.linkedin.com/in/gokulan-ravi-ba436413a/'
     $http.get('/api/users/').then(res => {
       for(var i=0;i<res.data.length;i++)
       {
