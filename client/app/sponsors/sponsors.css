@@ -20,7 +20,11 @@
 
 .sponsors .logo{
   flex: 1;
-  padding: 20px 50px;
+  padding: 20px 70px;
+}
+
+.mainlogo{
+
 }
 
 .sponsors .fbox{
